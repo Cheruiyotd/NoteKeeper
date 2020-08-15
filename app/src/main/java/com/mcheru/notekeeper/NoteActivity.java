@@ -94,7 +94,7 @@ public class NoteActivity extends AppCompatActivity {
     private void sendMail() {
         CourseInfo course = (CourseInfo) mSpinnerCourses.getSelectedItem();
         String subject = mTextNoteTitle.getText().toString();
-        String mailBody = mTextNoteTitle.getText().toString();
+        String mailBody = mTextNoteText.getText().toString();
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("message/rfc2822");
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
